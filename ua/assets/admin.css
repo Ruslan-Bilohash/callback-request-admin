@@ -1,0 +1,126 @@
+.cra-admin-wrap {
+    max-width: 900px;
+}
+
+.cra-page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cra-page-subtitle {
+    color: #6b7280;
+    margin-top: 0;
+}
+
+.cra-nav-tab-wrapper {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.cra-nav-tab {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: -2px;
+    font-weight: 600;
+    color: #374151;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.cra-nav-tab-active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+.cra-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+}
+
+.cra-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #111827;
+}
+
+/* === Cool Header === */
+.cra-header {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin-bottom: 20px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+}
+
+.cra-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cra-header-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cra-header-icon {
+    font-size: 42px;
+    line-height: 1;
+}
+
+.cra-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.cra-header-subtitle {
+    margin: 4px 0 0;
+    opacity: 0.9;
+    font-size: 14px;
+    color: #dbeafe;
+}
+
+.cra-header-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cra-version {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cra-donate-btn {
+    background: #fff !important;
+    color: #1e40af !important;
+    border: none !important;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cra-donate-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Small polish for integrations tab */
+#tab-integrations .description {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 13px;
+}

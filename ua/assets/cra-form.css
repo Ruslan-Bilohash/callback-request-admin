@@ -1,0 +1,166 @@
+/**
+ * Frontend styles for Callback Request Admin form
+ * Enqueued via wp_enqueue_style('cra-form')
+ */
+
+.cra-form-wrap {
+    /* CSS custom properties are set inline on the element for dynamic design settings */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.cra-form {
+    background: var(--cra-bg, #ffffff);
+    border-radius: var(--cra-radius, 16px);
+    padding: var(--cra-pad, 32px);
+    max-width: 520px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cra-form h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.cra-form .cra-field {
+    margin-bottom: 16px;
+}
+
+.cra-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #374151;
+    font-size: 14px;
+}
+
+.cra-form input[type="text"],
+.cra-form input[type="tel"],
+.cra-form input[type="email"],
+.cra-form textarea,
+.cra-form select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.cra-form input:focus,
+.cra-form textarea:focus,
+.cra-form select:focus {
+    outline: none;
+    border-color: var(--cra-accent, #2563eb);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.cra-contact-types {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.cra-contact-types > div {
+    flex: 1;
+    min-width: 110px;
+}
+
+.cra-contact-types label {
+    display: block;
+    background: #f8fafc;
+    border: 2px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.cra-contact-types label.active,
+.cra-contact-types input[type="radio"]:checked + label {
+    background: var(--cra-accent, #2563eb);
+    color: #fff;
+    border-color: var(--cra-accent, #2563eb);
+}
+
+.cra-contact-types input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cra-messenger-row {
+    display: flex;
+    gap: 10px;
+}
+
+.cra-messenger-row select {
+    width: 42%;
+}
+
+.cra-messenger-row input {
+    width: 58%;
+}
+
+.cra-form .cra-submit {
+    background: var(--cra-btn, #2563eb);
+    color: var(--cra-btn-text, #ffffff);
+    border: none;
+    border-radius: 999px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+    transition: transform 0.1s ease, box-shadow 0.2s;
+}
+
+.cra-form .cra-submit:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cra-form .cra-submit:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.cra-form .cra-success {
+    background: #ecfdf5;
+    border: 1px solid #10b981;
+    color: #065f46;
+    padding: 18px 20px;
+    border-radius: var(--cra-radius, 16px);
+    text-align: center;
+    font-weight: 600;
+}
+
+.cra-form-message.cra-error {
+    background: #fef2f2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    display: block;
+}
+
+.cra-form small {
+    color: #6b7280;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* Optional: make it look decent when used in admin preview too */
+.cra-admin-wrap .cra-form {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
